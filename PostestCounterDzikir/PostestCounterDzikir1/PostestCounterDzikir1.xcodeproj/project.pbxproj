@@ -16,6 +16,7 @@
 		DC0BC62C1F9D990F00BD8C07 /* PostestCounterDzikir1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC62B1F9D990F00BD8C07 /* PostestCounterDzikir1Tests.swift */; };
 		DC0BC6371F9D990F00BD8C07 /* PostestCounterDzikir1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC6361F9D990F00BD8C07 /* PostestCounterDzikir1UITests.swift */; };
 		DC0BC6451F9D99BB00BD8C07 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BC6441F9D99BB00BD8C07 /* ThirdViewController.swift */; };
+		DCFCCDD71FCE86D5000E9FA7 /* Back To You.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCFCCDD61FCE86D5000E9FA7 /* Back To You.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DC0BC6361F9D990F00BD8C07 /* PostestCounterDzikir1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostestCounterDzikir1UITests.swift; sourceTree = "<group>"; };
 		DC0BC6381F9D990F00BD8C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC0BC6441F9D99BB00BD8C07 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		DCFCCDD61FCE86D5000E9FA7 /* Back To You.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Back To You.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		DC0BC6131F9D990E00BD8C07 /* PostestCounterDzikir1 */ = {
 			isa = PBXGroup;
 			children = (
+				DCFCCDD61FCE86D5000E9FA7 /* Back To You.jpg */,
 				DC0BC6141F9D990E00BD8C07 /* AppDelegate.swift */,
 				DC0BC6161F9D990E00BD8C07 /* FirstViewController.swift */,
 				DC0BC6181F9D990E00BD8C07 /* SecondViewController.swift */,
@@ -241,6 +244,7 @@
 				DC0BC6211F9D990F00BD8C07 /* LaunchScreen.storyboard in Resources */,
 				DC0BC61E1F9D990E00BD8C07 /* Assets.xcassets in Resources */,
 				DC0BC61C1F9D990E00BD8C07 /* Main.storyboard in Resources */,
+				DCFCCDD71FCE86D5000E9FA7 /* Back To You.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

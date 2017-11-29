@@ -17,6 +17,9 @@ class ThirdViewController: UIViewController {
         
     }
     override func viewDidLoad() {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named:  "Back To You.jpg")
+        self.view.insertSubview(backgroundImage, at: 0)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

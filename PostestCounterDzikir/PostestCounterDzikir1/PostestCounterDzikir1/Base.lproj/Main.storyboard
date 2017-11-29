@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,34 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اَللهُ أَكْبَرُ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7V1-eW-Wz3">
-                                <rect key="frame" x="100" y="99" width="175" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اَللهُ أَكْبَرُ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7V1-eW-Wz3">
+                                <rect key="frame" x="60" y="99" width="256" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="8XQ-8f-trF"/>
+                                    <constraint firstAttribute="width" constant="256" id="9bi-rb-Goa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7K-bq-RBH">
-                                <rect key="frame" x="140" y="197" width="104" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-Rb-nFP">
-                                <rect key="frame" x="145" y="333" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-Rb-nFP">
+                                <rect key="frame" x="141" y="386" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="d2M-gw-gba"/>
+                                    <constraint firstAttribute="width" constant="94" id="jdi-av-BmM"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="stepperValueChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="wbn-fT-8KR"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7K-bq-RBH">
+                                <rect key="frame" x="129" y="211" width="117" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="A95-lm-eIV"/>
+                                    <constraint firstAttribute="width" constant="117" id="cZV-ho-3e2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="D3W-Rb-nFP" secondAttribute="trailing" constant="140" id="2t1-HU-ThO"/>
+                            <constraint firstItem="P7K-bq-RBH" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="129" id="5cy-gY-QxZ"/>
+                            <constraint firstItem="7V1-eW-Wz3" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="79" id="8Pb-O1-WXo"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="D3W-Rb-nFP" secondAttribute="bottom" constant="203" id="CXy-CM-4vL"/>
+                            <constraint firstItem="7V1-eW-Wz3" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="60" id="D1V-UW-1Su"/>
+                            <constraint firstItem="D3W-Rb-nFP" firstAttribute="top" secondItem="P7K-bq-RBH" secondAttribute="bottom" constant="40" id="JpC-hS-4YT"/>
+                            <constraint firstItem="P7K-bq-RBH" firstAttribute="top" secondItem="7V1-eW-Wz3" secondAttribute="bottom" constant="22" id="VYj-mV-wuF"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="P7K-bq-RBH" secondAttribute="trailing" constant="129" id="bol-R8-7V5"/>
+                            <constraint firstItem="D3W-Rb-nFP" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="141" id="hdX-x0-MWf"/>
+                            <constraint firstItem="P7K-bq-RBH" firstAttribute="top" secondItem="7V1-eW-Wz3" secondAttribute="bottom" constant="22" id="kXa-a1-1La"/>
+                            <constraint firstItem="D3W-Rb-nFP" firstAttribute="top" secondItem="P7K-bq-RBH" secondAttribute="bottom" constant="40" id="t1n-pH-VJW"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="7V1-eW-Wz3" secondAttribute="trailing" constant="59" id="ujL-gG-pJs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Subhanallah " image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Subhanallah " image="muslim-man-praying (1)" landscapeImage="muslim-man-praying (1)" selectedImage="muslim-man-praying (1)" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="labelNumber" destination="P7K-bq-RBH" id="RwF-Vw-AEE"/>
                         <outlet property="labelStepper" destination="D3W-Rb-nFP" id="B5Q-TA-EZM"/>
@@ -62,34 +83,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="سُبْحَانَ اللهُ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIc-AF-4yb">
-                                <rect key="frame" x="81" y="108" width="202" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4M-LA-Reo">
-                                <rect key="frame" x="126" y="197" width="122" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4M-LA-Reo">
+                                <rect key="frame" x="126" y="190" width="122" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="SV7-av-1bW"/>
+                                    <constraint firstAttribute="height" constant="132" id="oYH-8H-izB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="XNH-h2-EV9">
-                                <rect key="frame" x="140" y="342" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="XNH-h2-EV9">
+                                <rect key="frame" x="140" y="380" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="5Yt-5h-75n"/>
+                                    <constraint firstAttribute="height" constant="29" id="IDF-sf-NlA"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="stepperValueChanged:" destination="LwM-97-P6k" eventType="valueChanged" id="EID-2s-8cR"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سُبْحَانَ اللهُ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIc-AF-4yb">
+                                <rect key="frame" x="86" y="99" width="202" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="RIs-JC-bn0"/>
+                                    <constraint firstAttribute="height" constant="107" id="ao6-ff-J2L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IIc-AF-4yb" firstAttribute="leading" secondItem="nxL-cw-IS7" secondAttribute="leading" constant="86" id="8fP-l1-WfT"/>
+                            <constraint firstItem="XNH-h2-EV9" firstAttribute="top" secondItem="s4M-LA-Reo" secondAttribute="bottom" constant="58" id="NIf-g1-LJ6"/>
+                            <constraint firstItem="XNH-h2-EV9" firstAttribute="top" secondItem="s4M-LA-Reo" secondAttribute="bottom" constant="58" id="UKH-7D-70V"/>
+                            <constraint firstItem="XNH-h2-EV9" firstAttribute="leading" secondItem="nxL-cw-IS7" secondAttribute="leading" constant="140" id="WRs-Zd-SDY"/>
+                            <constraint firstItem="nxL-cw-IS7" firstAttribute="trailing" secondItem="IIc-AF-4yb" secondAttribute="trailing" constant="87" id="X7Q-Bl-zdY"/>
+                            <constraint firstItem="IIc-AF-4yb" firstAttribute="top" secondItem="nxL-cw-IS7" secondAttribute="top" constant="79" id="Xmf-xK-i2E"/>
+                            <constraint firstItem="s4M-LA-Reo" firstAttribute="top" secondItem="nxL-cw-IS7" secondAttribute="top" constant="170" id="fSB-GU-nca"/>
+                            <constraint firstItem="nxL-cw-IS7" firstAttribute="bottom" secondItem="XNH-h2-EV9" secondAttribute="bottom" constant="209" id="gf6-uX-DXT"/>
+                            <constraint firstItem="s4M-LA-Reo" firstAttribute="leading" secondItem="nxL-cw-IS7" secondAttribute="leading" constant="126" id="hPs-gd-SQV"/>
+                            <constraint firstItem="nxL-cw-IS7" firstAttribute="trailing" secondItem="XNH-h2-EV9" secondAttribute="trailing" constant="141" id="jRd-14-gwj"/>
+                            <constraint firstItem="XNH-h2-EV9" firstAttribute="top" secondItem="IIc-AF-4yb" secondAttribute="bottom" constant="174" id="uye-Gx-dsR"/>
+                            <constraint firstItem="nxL-cw-IS7" firstAttribute="trailing" secondItem="s4M-LA-Reo" secondAttribute="trailing" constant="127" id="yXc-eT-18u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nxL-cw-IS7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Astagfirullah " image="first" selectedImage="first" id="bLh-9V-nu6"/>
+                    <tabBarItem key="tabBarItem" title="Astagfirullah " image="muslim-man-praying (1)" selectedImage="muslim-man-praying (1)" id="bLh-9V-nu6"/>
                     <connections>
                         <outlet property="labelNumber" destination="s4M-LA-Reo" id="yr5-Bz-7jQ"/>
                         <outlet property="labelStepper" destination="XNH-h2-EV9" id="dhb-xH-eEj"/>
@@ -107,35 +149,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اَلْحَمْدُ لِلَّهِ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VX-IT-gcN">
-                                <rect key="frame" x="59" y="141" width="256" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSU-8S-d1i">
+                                <rect key="frame" x="112" y="233" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="I94-kQ-04L"/>
+                                    <constraint firstAttribute="height" constant="150" id="oQD-DI-RNM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSU-8S-d1i">
-                                <rect key="frame" x="112" y="233" width="150" height="156"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Qwz-sV-ziK">
-                                <rect key="frame" x="140" y="397" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Qwz-sV-ziK">
+                                <rect key="frame" x="140" y="419" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="gF4-12-KBc"/>
+                                    <constraint firstAttribute="width" constant="94" id="sAK-Yl-xli"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="steppervalueChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="XJE-lE-bhM"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اَلْحَمْدُ لِلَّهِ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VX-IT-gcN">
+                                <rect key="frame" x="59" y="122" width="256" height="84"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="0z6-FE-K9a"/>
+                                    <constraint firstAttribute="height" constant="84" id="Ie4-9G-bIJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gSU-8S-d1i" firstAttribute="top" secondItem="1VX-IT-gcN" secondAttribute="bottom" constant="27" id="58I-4O-aDa"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Qwz-sV-ziK" secondAttribute="bottom" constant="170" id="DbH-ka-pcI"/>
+                            <constraint firstItem="Qwz-sV-ziK" firstAttribute="top" secondItem="gSU-8S-d1i" secondAttribute="bottom" constant="36" id="JX3-ka-Bxg"/>
+                            <constraint firstItem="gSU-8S-d1i" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="112" id="Jr4-ah-RZ8"/>
+                            <constraint firstItem="1VX-IT-gcN" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="59" id="Ktj-H5-EhA"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="gSU-8S-d1i" secondAttribute="trailing" constant="113" id="Mw9-0T-9Z9"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="1VX-IT-gcN" secondAttribute="trailing" constant="60" id="OjP-VK-YZn"/>
+                            <constraint firstItem="Qwz-sV-ziK" firstAttribute="top" secondItem="gSU-8S-d1i" secondAttribute="bottom" constant="36" id="Y2x-be-qAo"/>
+                            <constraint firstItem="gSU-8S-d1i" firstAttribute="top" secondItem="1VX-IT-gcN" secondAttribute="bottom" constant="27" id="jwO-FZ-BRd"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Qwz-sV-ziK" secondAttribute="trailing" constant="141" id="njP-TE-wzX"/>
+                            <constraint firstItem="1VX-IT-gcN" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="102" id="wCA-SE-kYf"/>
+                            <constraint firstItem="Qwz-sV-ziK" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="140" id="xga-Km-bSq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Allhamdullilah" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Allhamdullilah" image="muslim-man-praying (1)" selectedImage="muslim-man-praying (1)" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="labelNumber" destination="gSU-8S-d1i" id="hxB-LO-Rwo"/>
                         <outlet property="labelStepper" destination="Qwz-sV-ziK" id="5VQ-Xh-9Le"/>
@@ -166,7 +229,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="muslim-man-praying (1)" width="32" height="32"/>
     </resources>
 </document>

@@ -16,6 +16,9 @@ class SecondViewController: UIViewController {
         labelNumber.text = Int(sender.value).description
     }
     override func viewDidLoad() {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named:  "Back To You.jpg")
+        self.view.insertSubview(backgroundImage, at: 0)
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         labelStepper.wraps = true

@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baskerville.ttc">
+            <string>Baskerville</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -13,13 +22,46 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back To You.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="T0t-Tz-Ngx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="i8u-dq-lms"/>
+                                    <constraint firstAttribute="width" constant="375" id="xpa-ny-adB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DZIKIR YUK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82B-4s-U0y">
+                                <rect key="frame" x="63" y="243" width="249" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="82B-4s-U0y" secondAttribute="height" multiplier="83:60" id="Vgh-5G-Pmc"/>
+                                    <constraint firstAttribute="height" constant="180" id="ncf-BT-6VE"/>
+                                    <constraint firstAttribute="width" constant="249" id="uBS-PC-jK6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="37"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="82B-4s-U0y" secondAttribute="bottom" constant="244" id="04D-90-v8v"/>
+                            <constraint firstItem="T0t-Tz-Ngx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7yP-fA-t8v"/>
+                            <constraint firstItem="82B-4s-U0y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="E5k-cI-sF5"/>
+                            <constraint firstItem="T0t-Tz-Ngx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="L5T-93-uCn"/>
+                            <constraint firstItem="82B-4s-U0y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="Pa1-Dq-O33"/>
+                            <constraint firstItem="T0t-Tz-Ngx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eI8-PW-wgZ"/>
+                            <constraint firstItem="T0t-Tz-Ngx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hFp-hc-sJP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="82B-4s-U0y" secondAttribute="trailing" constant="63" id="rAV-RH-h6W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Back To You.jpg" width="736" height="1308"/>
+    </resources>
 </document>
